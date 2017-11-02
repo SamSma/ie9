@@ -1,0 +1,382 @@
+body{
+  background-color: #f5f5f5;
+}
+
+input{
+  outline: none;
+  font-size:14px;
+}
+
+.AuthMain{
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top:30px;
+  margin-top:20px;
+  min-height:660px;
+  .ant-steps .ant-steps-main{
+    display: block;
+    left: -15px;
+    margin-top: 20px;
+  }
+  .ant-steps .ant-steps-item:first-child .ant-steps-main{
+    left:-25px;
+  }
+  .ant-steps .ant-steps-item:nth-child(2) .ant-steps-main{
+    left:-35px;
+  }
+  .ant-steps .ant-steps-head-inner{
+    margin-right: 0;
+  }
+  .ant-steps-horizontal .ant-steps-item:not(:first-child) .ant-steps-head{
+    padding:0;
+    margin:0;
+  }
+  .ant-steps .ant-steps-tail{
+    top:9px;
+  }
+  .ant-steps .ant-steps-tail > i{
+    height:8px;
+  }
+  .ant-steps .ant-steps-item.ant-steps-status-process .ant-steps-head-inner{
+    border-color: #3477c5;
+    background-color: #3477c5;
+  }
+  .ant-steps .ant-steps-item.ant-steps-status-process .ant-steps-title{
+    color:#3477C5;
+  }
+  .ant-steps .ant-steps-title{
+    font-weight: initial;
+  }
+  .ant-steps .ant-steps-item.ant-steps-status-wait .ant-steps-title{
+    color:#adadad;
+  }
+  .ant-steps .ant-steps-item.ant-steps-status-finish .ant-steps-tail > i:after{
+    background-color: #3477C5;
+  }
+  .ant-steps .ant-steps-item.ant-steps-status-finish .ant-steps-head-inner{
+    background-color: #3477C5;
+    border-color:#3477C5;
+  }
+  .ant-steps .ant-steps-item.ant-steps-status-finish .ant-steps-head-inner > .ant-steps-icon{
+    color:#fff;
+  }
+}
+.ant-steps{
+  max-width: 885px;
+  margin:0 auto;
+}
+
+.steps-action{
+  text-align: center;
+  margin-top:20px;
+  margin-bottom: 130px;
+  .nextBtn[disabled], .nextBtn[disabled]:hover{
+    width:33%;
+    height:36px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size:14px;
+    color:#fff;
+    background-color: #d9d9d9;
+    border-color:#d9d9d9;
+  }
+  .nextBtn{
+    width:33%;
+    height:36px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size:14px;
+    background-color: #3377c4;
+    border-color:#3377c4;
+  }
+  .nextBtn:hover, .nextBtn:focus{
+    background-color: #3377c4;
+    border-color:#3377c4;
+  }
+  .prevBtn{
+    width:17%;
+    height:36px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size:14px;
+    background-color: #fff;
+    border-color:#d9d9d9;
+    color:#3377c4;
+    margin-right: 20px;
+  }
+  .prevBtn:hover, .prevBtn:focus{
+    background-color: #fff;
+    border-color:#d9d9d9;
+    color:#3377c4;
+  }
+  .stepThreeBtn{
+    width:17%;
+  }
+}
+
+.autEnteCon{
+  text-align: center;
+  .stepOne {
+    width: 33%;
+    margin: 135px auto 0 auto;
+    p{
+      text-align: left;
+      margin-bottom:20px;
+      font-size: 14px;
+      span{
+        color:#b8b8b8;
+      }
+    }
+    input {
+      width: 246px;
+      height: 48px;
+      padding: 5px;
+      border: 1px solid #b5b5b5;
+      margin-right:30px;
+      vertical-align: middle;
+    }
+    a{
+      text-align: center;
+      background-color: #3377c4;
+      color:#fff;
+      width:120px;
+      padding:13.5px 0;
+      display: inline-block;
+      vertical-align: middle;
+      font-size:14px;
+    }
+    a:hover{
+      color:#fff !important;
+    }
+  }
+  .stepTwo{
+    width: 100%;
+    margin: 75px auto 0 auto;
+    .ant-col-4{
+      text-align: right;
+      font-size: 14px;
+      color:#333;
+      height:32px;
+      line-height:32px;
+      .asterisk{
+        color:#3377c4;
+        display: inline-block;
+        margin-right:5px;
+      }
+    }
+    .ant-col-20{
+      text-align: left;
+      margin-bottom: 50px;
+      input[type="text"],select,.ant-calendar-picker-input{
+        height:32px;
+        border:1px solid #ebebeb;
+        padding: 0 10px;
+        width:150px;
+        color:#999;
+        background-color: #fff;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        outline: none;
+        margin-right: 5px;
+      }
+      .ant-calendar-picker{
+        margin-right:35px;
+      }
+      .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled){
+        border-color:#ebebeb;
+      }
+      input[type="radio"]{
+        margin-right: 10px;
+      }
+      input[type="text"].longInput{
+        width:420px;
+      }
+    }
+    .stepTwoYynx p{
+      margin-top: 15px;
+      color:#999;
+    }
+    .cardUpload{
+      .cardUploadCon{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin-right: 80px;
+        input[type="file"]{
+          position:absolute;
+          top:50%;
+          margin-top:-76px;
+          left: 50%;
+          margin-left:-121.5px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          cursor: pointer;
+          opacity:0;
+          width:243px;
+          height:152px;
+          overflow: hidden;
+        }
+      }
+      .cardInfoPrompt{
+        display: inline-block;
+        vertical-align: middle;
+        p{
+          font-size: 14px;
+          color:#3377c4;
+          margin-bottom:10px;
+        }
+        ul{
+          font-size: 12px;
+        }
+        .mainColor{
+          color:#3377c4;
+        }
+      }
+    }
+  }
+  .stepThree{
+    width:100%;
+    margin:80px auto 0 auto;
+    .stepThreePrompt{
+      color:#333;
+      font-size: 16px;
+      margin-left:25px;
+      vertical-align: middle;
+      width: 100%;
+      text-align: left;
+      margin-bottom:95px;
+      .tilLine{
+        width: 4px;
+        height:30px;
+        background-color: #3377c4;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      .tilWz{
+        display: inline-block;
+        height: 30px;
+        vertical-align: middle;
+        line-height: 30px;
+        a{
+          color:#3377c4;
+        }
+      }
+    }
+    .ant-col-4{
+      text-align: right;
+      font-size: 14px;
+      color:#333;
+      height:32px;
+      line-height:32px;
+      .asterisk{
+        color:#3377c4;
+        display: inline-block;
+        margin-right:5px;
+      }
+    }
+    .ant-col-20 {
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    .cardUpload{
+      .cardUploadCon{
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin-right: 80px;
+        input[type="file"]{
+          position:absolute;
+          top:50%;
+          margin-top:-76px;
+          left: 50%;
+          margin-left:-121.5px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          cursor: pointer;
+          opacity:0;
+          width:243px;
+          height:152px;
+          overflow: hidden;
+        }
+      }
+      .cardInfoPrompt{
+        display: inline-block;
+        span{
+          vertical-align: middle;
+          color:#3377c4;
+        }
+        img{
+          display: inline-block;
+          margin: 0;
+          margin-right: 45px;
+          vertical-align: text-top;
+        }
+        ul{
+          font-size:12px;
+          display: inline-block;
+          vertical-align: text-top;
+          li{
+            list-style:disc;
+            margin-bottom:5px;
+          }
+          li:last-child{
+            margin-bottom:0;
+          }
+        }
+      }
+    }
+  }
+  .stepFour{
+    width: 28%;
+    margin: 75px auto 0 auto;
+    img{
+      margin:0 auto 35px auto;
+    }
+    p{
+      text-align: left;
+      font-size: 16px;
+      color:#333;
+      margin-bottom:40px;
+      .stepUpdateBtn{
+        color:#fff;
+        background-color: #3377c4;
+        padding: 0.5px 6px;
+        font-size: 14px;
+        margin-left:35px;
+        display: inline-block;
+      }
+      .stepUpdateBtn:hover{
+        color:#fff !important;
+      }
+    }
+    p:last-child{
+      margin-bottom: 80px;
+    }
+    p span{
+      color:#666;
+    }
+  }
+  .stepFive{
+    width: 15%;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    img{
+      margin: 0 auto;
+    }
+    p{
+      color:#3377c4;
+      font-size: 16px;
+      margin:35px 0 90px;
+    }
+  }
+}
+

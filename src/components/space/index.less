@@ -1,0 +1,409 @@
+@marginRight:20px;
+body{
+  background-color: #f6f8fb !important;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+.f-left{
+  float: left;
+  *{
+    margin-right: @marginRight;
+  }
+}
+
+.f-right{
+  float: right;
+  a{
+    margin-right: @marginRight;
+  }
+  span{
+    margin-right: 20px;
+    a{
+      margin:0 2.5px;
+    }
+  }
+}
+
+.content{
+  width:1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.conTil{
+  margin-top: 50px;
+}
+
+.conTil > *{
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.conTilLine{
+  height:40px;
+  width:6px;
+  background-color: #426dfb;
+  display: inline-block;
+  margin-right: @marginRight;
+}
+
+.conTilWz{
+  color:#333;
+  font-size: 24px;
+}
+
+.conTilYw{
+  color: #999;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.conInfo{
+  padding-top:30px;
+}
+
+.conIntro p{
+  margin-bottom: 30px;
+  color: #4a4a4a;
+}
+
+.conIntro p:last-child{
+  margin-bottom: 0;
+}
+
+.conBg{
+  background: #fff;
+  width: 100%;
+}
+
+.conActiv{
+  padding-bottom:35px;
+}
+
+.conMap{
+  padding-bottom:50px;
+}
+
+.conMapAddress{
+  margin-top:15px;
+  color:#333;
+}
+
+.conMapAddress i{
+  margin-right: 5px;
+  font-size: 18px;
+  color:#cbcacf;
+}
+
+.conMapAddress > span{
+  font-size:14px;
+}
+
+.conMapAll > *{
+  color:#06af79 !important;
+}
+
+.conMapAll i{
+  font-size:12px;
+  margin-right: 5px;
+}
+
+.conEnteService{
+  padding-bottom:75px;
+}
+
+.conRegTop{
+  position:absolute;
+  top: 45px;
+  left: 25px;
+  color:#fff;
+}
+
+.conRegTop p{
+  font-size:24px;
+}
+
+.conRegTop span{
+  font-size: 14px;
+}
+
+.conRegBottom{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  background-color: #4a4a4a;
+  color:#fff;
+}
+.conRegBottom span{
+  display: inline-block;
+  width:33.333%;
+  padding:20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.conRegService{
+  background-color: #fff;
+  padding:16px 20px;
+  border-right: 1px solid #d2d2d2;
+  border-bottom:1px solid #d2d2d2;
+}
+
+.conRegName{
+  font-size:18px;
+  color:#333;
+}
+
+.conRegIntro{
+  font-size: 16px;
+  margin-top:5px;
+  color:#666;
+}
+
+.conRegPrice{
+  font-size:30px;
+  line-height: 30px;
+  color:#f7791b;
+  margin-top:29.4px;
+}
+
+.conRegLarge .conRegPrice{
+  margin-top:80px;
+}
+
+.conRegBtn{
+  color:#426dfb;
+  border:1px solid #426dfb;
+  display: inline-block;
+  font-size: 16px;
+  padding:10px 35px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top:25px;
+  margin-bottom:27px;
+}
+
+.conRegBtn:hover{
+  color:#426dfb !important;
+}
+
+.conRegRead{
+  background-color: #fff;
+  border-right:1px solid #d2d2d2;
+}
+
+.conReadTil{
+  padding: 20px;
+  border-bottom: 1px solid #d2d2d2;
+  font-size: 18px;
+  color:#333;
+}
+
+.conReadList{
+  padding:0 20px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.conEnteService .conReadSingle img{
+  width:auto;
+}
+
+.conReadSingle{
+  border-bottom:1px dashed #d2d2d2;
+  padding:35px 15px;
+}
+
+.conReadSingle:last-child{
+  border-bottom:0;
+  padding-bottom: 37px;
+}
+
+.conReadSingle:last-child span{
+  max-width: 145px;
+}
+
+.conReadSingle a{
+  font-size: 16px;
+  color:#333;
+}
+
+.conReadSingle a:hover{
+  color:#426dfb !important;
+}
+
+.conReadSingle a > *{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.conReadSingle a span{
+  margin-left: 25px;
+}
+
+.conEnteList{
+  height: 120px;
+  position: relative;
+}
+
+.conEnteList img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.conEnteList + p{
+  text-align: center;
+}
+
+.conSpaceEnte{
+  padding-bottom:40px;
+}
+
+header{
+  background-color: #f4f4f4;
+
+  .header {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 12px 0;
+    color:#888;
+
+    .headerLeft > *,.headerRight > *{
+      margin-right: @marginRight;
+    }
+
+    a{
+      color:#888;
+    }
+
+    i{
+      margin-left: 5px;
+    }
+  }
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  max-height: 570px;
+  line-height: 570px;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide:nth-child(2){
+  background: url("../../common/images/space/bannerImg.png");
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+.ant-carousel .banner .slick-dots{
+  height:auto;
+}
+
+.ant-carousel .banner .slick-dots li button{
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #426dfb;
+  opacity: 1;
+}
+
+.ant-carousel .banner .slick-dots li button:hover, .ant-carousel .banner .slick-dots li button:focus{
+  opacity: 1;
+  background: #426dfb;
+}
+
+.ant-carousel .banner .slick-dots li.slick-active button{
+  width:20px;
+  background: #426dfb;
+}
+
+.custom-image img {
+  display: block;
+}
+.custom-card {
+  padding: 15px;
+}
+.custom-card p {
+  min-height:36px;
+}
+
+.conEnteService .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+  margin-right:0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #e5e5e5;
+  border:1px solid #e5e5e5;
+  border-bottom:1px solid #426dfb;
+  //font-size: 16px;
+  color:#666;
+  padding:6px 34.8px 3px;
+}
+.conEnteService .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+  border-top:1px solid #426dfb;
+  border-left:1px solid #426dfb;
+  border-right: 1px solid #426dfb;
+  color:#333;
+  padding:6px 34.8px 4px;
+}
+.conEnteService .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab.ant-tabs-tab-active:last-child{
+  border-right: 1px solid #426dfb;
+}
+.conEnteService .ant-tabs.ant-tabs-card > .ant-tabs-bar{
+  margin-bottom:0;
+}
+.conEnteService img{
+  width: 100%;
+}
+.bannerCon{
+  position:relative;
+}
+.bannerNav{
+  position:absolute;
+  top:0;
+  left:50%;
+  margin-left:-600px;
+  width:1200px;
+  overflow: hidden;
+  padding: 30px 0;
+  img{
+    display: inline-block;
+  }
+  .bannerNavRight{
+    float: right;
+    a{
+      color:#333;
+      font-size: 14px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 54px;
+      margin-right: 30px;
+    }
+    .bannerNavLine{
+      display: inline-block;
+      width:1px;
+      height:12px;
+      background-color: #333;
+      vertical-align: middle;
+      margin-right:30px;
+    }
+    .bannerNavlast{
+      display: inline-block;
+      a{
+        font-weight:600;
+      }
+    }
+  }
+}

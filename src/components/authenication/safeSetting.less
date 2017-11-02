@@ -1,0 +1,150 @@
+.rightBg {
+  overflow: hidden;
+  .safeLevel {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+  }
+  .levelIconBox {
+    padding-left: 6px;
+    span {
+      margin-right: 11px;
+      vertical-align: middle;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .safeLevelIconUn {
+      width: 30px;
+      height: 36px;
+      display: inline-block;
+      background: url("../../common/images/auth/safeLevel-un.png") center center no-repeat;
+    }
+    .safeLevelIconIng {
+      width: 30px;
+      height: 36px;
+      display: inline-block;
+      background: url("../../common/images/auth/safeLevel-ing.png") center center no-repeat;
+    }
+    i {
+      display: inline-block;
+      padding: 4px;
+      border: 1px solid #3377c4;
+      font: normal normal normal 14px/1.1 "微软雅黑";
+      margin: 0 0 0 32px;
+      color: #3377c4;
+      vertical-align: middle;
+    }
+  }
+  .levelTips {
+    padding-left: 6px;
+    color: #999;
+    font-size: 14px;
+    margin: 16px 0 13px 0;
+  }
+  .safeContent {
+    position: relative;
+    .safeContentItem {
+      padding: 18px 0 11px 0;
+      .safeIconBox {
+        text-align: center;
+        line-height: 1;
+        .outSide {
+          display: inline-block;
+          padding: 8px;
+          background: #fbe6cd;
+          border-radius: 50%;
+          .inSide {
+            padding: 8px 11px;
+            border-radius: 50%;
+            background: #f9cc96;
+            display: block;
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+      .safeOptionsTitle {
+        font-size: 14px;
+        color: #000;
+        text-align: center;
+        margin: 15px 0 20px 0;
+        line-height: 1.2;
+        position: relative;
+        i {
+          color: #999;
+          font: normal normal normal 12px/1.1 "微软雅黑";
+          position: absolute;
+          top: 1px;
+          right: 68px;
+        }
+      }
+      .secondTitle {
+        color: #999;
+        text-align: center;
+        line-height: 1.2;
+        padding: 0 32px;
+        height: 42px;
+      }
+      .confirmBtn {
+        text-align: center;
+        margin-top: 16px;
+        button {
+          padding: 11px 12px;
+          border: 1px solid #3377c4;
+          line-height: 1.2;
+          border-radius: 0;
+          color: #3377c4;
+          cursor: pointer;
+          -webkit-transition: all .5s;
+          -moz-transition: all .5s;
+          -ms-transition: all .5s;
+          -o-transition: all .5s;
+          transition: all .5s;
+          &:hover {
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            background: #3377c4;
+            color: #fff;
+          }
+        }
+        .doubleBtx {
+          margin-right: 26px;
+        }
+      }
+    }
+    .rowLineOne {
+      position: absolute;
+      left: 33.33%;
+      top: 0;
+      display: block;
+      width: 1px;
+      height: 469px;
+      background: url("../../common/images/auth/rowLine.png") center center no-repeat;
+    }
+    .rowLineTwo {
+      position: absolute;
+      left: 66.66%;
+      top: 0;
+      display: block;
+      width: 1px;
+      height: 469px;
+      background: url("../../common/images/auth/rowLine.png") center center no-repeat;
+    }
+    .line {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: block;
+      width: 948px;
+      height: 1px;
+      margin-top: -.5px;
+      background: url("../../common/images/auth/line.png") center center no-repeat;
+    }
+  }
+}

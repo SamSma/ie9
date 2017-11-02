@@ -1,0 +1,44 @@
+.storeCaseBox {
+  .ant-col-6 {
+    margin: 0 0 30px 0;
+    .caseItemBox {
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+      cursor: pointer;
+      position: relative;
+      top: 0;
+      &:hover {
+        top: -8px;
+        box-shadow: 0 6px 16px rgba(31,31,31,0.2);
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+      }
+      & > div:last-child {
+        padding: 20px 15px;
+        background: #fff;
+        .caseTitle {
+          font-size: 16px;
+          color: #333;
+          line-height: 1.1;
+        }
+        .caseContent {
+          margin: 8px 0 0 0;
+          font-size: 14px;
+          color: #999;
+          height: 32px;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}
+.storePage {
+  text-align: center;
+  margin: 0 0 60px 0;
+}

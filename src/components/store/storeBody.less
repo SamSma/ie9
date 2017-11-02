@@ -1,0 +1,140 @@
+html,body{
+  overflow-x: hidden;
+}
+.storeMesBox {
+  .navImg {
+    display: block;
+    width: 100%;
+  }
+  .storeMes {
+    overflow: hidden;
+    background: #fff;
+    margin: -29px 0 0 0;
+    .storeLogo {
+      text-align: center;
+      span {
+        padding: 15px 7px;
+        background: #fff;
+        display: inline-block;
+      }
+      img {
+        display: block;
+      }
+    }
+    .companyName {
+      text-align: center;
+      line-height: 1.2;
+      margin: 8px 0 12px 0;
+      & > span:first-child {
+        color: #444;
+        font-size: 22px;
+        margin: 0 16px 0 0;
+      }
+      & > span:last-child {
+        color: #bbb;
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 7px 0 0;
+        }
+      }
+    }
+    .iconBox {
+      text-align: center;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .iconMarR {
+        margin: 0 16px 0 0;
+      }
+      .iconMarCR {
+        margin: 0;
+      }
+    }
+    .storeTags {
+      text-align: center;
+      margin: 16px 0 0 0;
+      li {
+        padding: 7px 10px;
+        background: #f0f2f5;
+        margin: 0 14px 0 0;
+        color: #999;
+        display: inline-block;
+        min-width: 68px;
+      }
+      & > li:last-child {
+        margin: 0;
+      }
+    }
+    .grades {
+      margin: 18px 0 107px 0;
+      text-align: center;
+      li {
+        display: inline-block;
+        padding: 0 24px;
+        border-right: 1px solid #ccc;
+        font-size: 14px;
+        color: #999;
+        line-height: 1.2;
+        vertical-align: middle;
+        img {
+          margin: 0 10px 0 0;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      & > li:last-child{
+        border-right: none !important;
+      }
+    }
+  }
+  .storeNav {
+    margin: -39px auto 0 auto;
+    position: relative;
+    .ant-tabs {
+      overflow: inherit;
+    }
+    ul {
+      li {
+        display: inline-block;
+        font-size: 16px;
+        padding: 0 0 20px 0;
+        line-height: 1.1;
+        margin: 0 65px 0 0;
+        a {
+          color: #666;
+        }
+      }
+      .selecting {
+        border-bottom: 2px solid #397ecd;
+        a {
+          color: #397ecd;
+        }
+      }
+    }
+    .operateBtns {
+      text-align: right;
+      position: absolute;
+      right: 0;
+      top: -4px;
+      & > a {
+        display: inline-block;
+        width: 120px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        margin: 0 11px 0 0;
+        color: #fff;
+        font-size: 14px;
+        background: #397ecd;
+      }
+      & > a:last-child{
+        color: #666;
+        background: none;
+        border: 1px solid #bbb;
+        margin: 0;
+      }
+    }
+  }
+}

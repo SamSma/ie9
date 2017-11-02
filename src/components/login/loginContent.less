@@ -1,0 +1,268 @@
+@mainColor: #0069af;
+.loginContent {
+	width: 100%;
+	padding: 38px 0;
+	background: @mainColor url("../../common/images/login/loginBg.jpg") center center no-repeat;
+	.w12 {
+		position: relative;
+		text-align: right;
+		.loginBox {
+			display: inline-block;
+			background: #fff;
+			padding: 32px 30px 36px 30px;
+			position: relative;
+			z-index: 2;
+			width: 410px;
+			height: 527px;
+		}
+		.lAndR {
+			.ant-tabs-bar {
+				border: none !important;
+				margin-bottom: 37px;
+			}
+			.ant-tabs-nav {
+				width: 100%;
+				.ant-tabs-tab {
+					width: 50%;
+					text-align: center;
+					padding: 0 60px;
+					font-size: 22px;
+					color: #666;
+					margin: 0;
+					border-right: 2px solid #e0e0e0 !important;
+				}
+				.ant-tabs-tab:last-child {
+					border-right: 2px solid transparent !important;
+				}
+				.ant-tabs-tab-active,
+				.ant-tabs-tab:hover {
+					color: @mainColor !important;
+				}
+			}
+			.ant-tabs-ink-bar {
+				display: none !important;
+			}
+		}
+		.login-form-button {
+			width: 100%;
+			border-radius: 0;
+			padding: 16px 0;
+			height: auto;
+			font-size: 16px;
+			background: @mainColor;
+			border: none;
+			&:hover {
+				background: #49a9ee;
+			}
+		}
+		.username,
+		.password{
+			border-radius: 0;
+			height: 50px;
+			font-size: 14px;
+			padding: 0 15px;
+		}
+		.userBox {
+			margin-bottom: 14px;
+		}
+		.autoLogin {
+			font-size: 14px;
+			color: #bdbdbd;
+			float: left;
+			.ant-checkbox {
+				margin-top: -2px;
+			}
+			.ant-checkbox + span {
+				vertical-align: middle;
+			}
+		}
+		.ant-checkbox-wrapper + span {
+			padding: 0;
+			font-size: 14px;
+			a {
+				color: #9d9d9d;
+			}
+			a:hover {
+				color: @mainColor !important;
+			}
+		}
+		.otherLogin {
+			p {
+				color: #bfbfbf;
+				text-align: center;
+				margin-top: 99px;
+				font-size: 14px;
+				i {
+					width: 132px;
+					height: 1px;
+					background: #e0e0e0;
+					display: inline-block;
+					vertical-align: super;
+				}
+			}
+			.platform {
+				text-align: center;
+				margin-top: 14px;
+				a {
+					width: 30px;
+					height: 31px;
+					margin-right: 38px;
+					display: inline-block;
+					&:hover {
+						transition: all .5s;
+						-webkit-transition: all .5s;
+						-moz-transition: all .5s;
+						-o-transition: all .5s;
+					}
+				}
+				a:last-child {
+					margin-right: 0;
+				}
+				.tencent {
+					background: url("../../common/images/login/otherLogin-un-1.png") center center no-repeat;
+					&:hover {
+						background: url("../../common/images/login/otherLogin-ing-1.png") center center no-repeat;
+					}
+				}
+				.sina {
+					background: url("../../common/images/login/otherLogin-un-2.png") center center no-repeat;
+					&:hover {
+						background: url("../../common/images/login/otherLogin-ing-2.png") center center no-repeat;
+					}
+				}
+				.alipay {
+					background: url("../../common/images/login/otherLogin-un-3.png") center center no-repeat;
+					&:hover {
+						background: url("../../common/images/login/otherLogin-ing-3.png") center center no-repeat;
+					}
+				}
+				.wechat {
+					background: url("../../common/images/login/otherLogin-un-4.png") center center no-repeat;
+					&:hover {
+						background: url("../../common/images/login/otherLogin-ing-4.png") center center no-repeat;
+					}
+				}
+			}
+		}
+		.sloganBox {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -116px;
+			color: #fff;
+			text-align: left;
+			p:first-child {
+				font: normal normal bold 100px/normal "微软雅黑";
+			}
+			p:nth-child(2) {
+				font: normal normal bold 48px/normal "微软雅黑";
+			}
+			p:last-child {
+				font: normal normal bold 18px/normal "微软雅黑";
+			}
+		}
+		.selectAreaTitle {
+			color: #595959;
+			text-align: left;
+			margin-bottom: 6px;
+			font-size: 14px;
+		}
+		.selectArea {
+			width: 100%;
+			height: 50px;
+			background: none;
+			border-radius: 0;
+			-webkit-appearance: button;
+			padding: 0 15px;
+			border: 1px solid #d9d9d9;
+			outline: none;
+			.ant-select-selection--single {
+				height: 50px;
+				padding: 0 49px 0 15px;
+				border-radius: 0;
+			}
+			.ant-select-selection__rendered {
+				margin: 0;
+				line-height: 48px;
+				border-right: 1px solid #e0e0e0;
+				font-size: 14px;
+			}
+			.ant-select-arrow {
+				right: 19px;
+			}
+		}
+		.tip {
+			color: #999;
+			font-size: 14px;
+			text-align: left;
+			margin: 10px 0 24px 0;
+		}
+		.areaCode {
+			height: 50px;
+			line-height: 48px;
+			width: 100%;
+			margin-bottom: 24px;
+			-webkit-appearance: button;
+			padding: 0 15px;
+			background: none;
+			border-radius: 0;
+			border: 1px solid #d9d9d9;
+			outline: none;
+			.ant-select-selection--single {
+				border-radius: 0;
+				height: 50px;
+			}
+			.ant-select-selection__rendered {
+				line-height: 48px;
+				color: #8f8f8f;
+				margin-left: 12px;
+			}
+			.ant-select-selection-selected-value {
+				padding-right: 24px;
+			}
+		}
+		.phoneTitle {
+			font-size: 14px;
+			color: #333;
+			text-align: left;
+		}
+		.phone {
+			border-radius: 0;
+			height: 50px;
+			font-size: 14px;
+			padding: 0 15px;
+			border-left: none;
+		}
+		.register {
+			width: 100%;
+			border-radius: 0;
+			height: auto;
+			padding: 17px 0;
+			background: @mainColor;
+			&:hover {
+				background: #49a9ee;
+			}
+			span {
+				font-size: 16px;
+			}
+		}
+		.TCP {
+			font-size: 14px;
+			color: #9d9d9d;
+			text-align: left;
+			margin-top: 16px;
+			a {
+				color: #333;
+				font-weight: bold;
+			}
+		}
+	}
+}
+.moduleBox {
+	.ant-modal-title {
+		text-align: center;
+	}
+	p {
+		word-break: break-all;
+	}
+}

@@ -1,0 +1,95 @@
+.storehonour {
+  padding: 0 0 100px 0;
+  .honourBox {
+    padding: 0 0 50px 0;
+    border-bottom: 1px solid #e6e6e6;
+    li {
+      display: inline-block;
+      margin: 0 20px 10px 0;
+      .honourLeft {
+        width: 130px;
+        min-height: 130px;
+        border: 1px solid #eff3f5;
+        border-radius: 1px;
+        background: #fff;
+        text-align: center;
+        cursor: pointer;
+        line-height: 130px;
+        float: left;
+      }
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .honourRight {
+        width: 273px;
+        background: #edf3f6;
+        padding: 9px 18px;
+        line-height: 1.1;
+        float: right;
+        height: 130px;
+        display: none;
+        & > p:first-child {
+          font-size: 14px;
+          color: #333;
+          margin: 0 0 15px 0;
+        }
+        & > p:nth-child(2) {
+          color: #646567;
+          line-height: 2;
+        }
+      }
+      &:after {
+        clear: both;
+        content: '';
+        display: block;
+      }
+    }
+    .sliding {
+      .honourRight {
+        display: block;
+      }
+    }
+  }
+  .honourProducts {
+    padding: 0 0 0 60px;
+    border-left: 10px solid #d5d5d5;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+    &:hover {
+      border-left: 10px solid #0069af;
+      & > .ant-row .ant-col-9 > p:first-child {
+        color: #0069af;
+      }
+    }
+    & > .ant-row {
+      padding: 0 0 27px 0;
+      border-bottom: 1px solid #e6e6e6;
+      .ant-col-9 {
+        font-size: 14px;
+        color: #8d8d8d;
+        line-height: 1.1;
+        padding: 16px 0 0 0;
+        & > p:first-child {
+          color: #333;
+          font-size: 16px;
+          margin: 0 0 21px 0;
+        }
+        & > p:nth-child(2) {
+          color: #666;
+          font-size: 14px;
+          line-height: 25px;
+          text-align: justify;
+          width: 350px;
+          word-break: break-all;
+          margin: 0 0 13px 0;
+        }
+      }
+      .ant-col-15 {
+        .ant-col-8 {
+          float: right;
+        }
+      }
+    }
+  }
+}

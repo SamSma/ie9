@@ -1,0 +1,183 @@
+.base-header{
+  line-height:36px;
+  a{
+    font-size: 14px;
+    color:#a9b3b4;
+  }
+  .m-right{
+    margin-right:35px;
+  }
+  .headRight{
+    a{
+      border-right:1px solid #a9b3b4;
+    }
+    a:last-child{
+      border-right:0;
+    }
+  }
+}
+.pad{
+  padding:0 20px;
+}
+.pad-lef{
+  padding-left:20px;
+}
+
+.base-bg{
+  height:298px;
+  width:100%;
+  position: relative;
+  background-color: #eff3f5;
+  .bas-img{
+    z-index:-1000;
+    height: 220px;
+  }
+  .enteBgCon{
+    position:absolute;
+    top:60px;
+    left:0;
+    right:0;
+    .enteBgImg{
+      box-shadow: 1px 2px 8px rgba(0,0,0,0.1);
+    }
+    .enteBgBorder{
+      position: absolute;
+      left:20px;
+      top:-13px;
+    }
+    .enteInfo{
+      position: absolute;
+      top:50%;
+      margin-top: -45.5px;
+      left:97px;
+      .enteLogo{
+        vertical-align: middle;
+        display: inline-block;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+        margin-right: 15px;
+      }
+      .enteState{
+        vertical-align: middle;
+        display: inline-block;
+        p:first-child{
+          font-size:22px;
+          color:#333;
+          line-height: 22px;
+          margin-bottom:15px;
+        }
+        p:last-child{
+          font-size: 14px;
+          color:#999;
+          *{
+            vertical-align: middle;
+            display: inline-block;
+          }
+          img{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .enteConAcco{
+      width: 300px;
+      height: 228px;
+      position: absolute;
+      right:0;
+      top:-14px;
+      background:url("../../common/images/baseshop/enteAccoBg.png") no-repeat;
+      text-align: center;
+      color:#fff;
+      font-size: 14px;
+      p:first-child{
+        margin-top: 50px;
+      }
+      .enteAccoBalance{
+        font-size:18;
+        span{
+          font-size: 50px;
+        }
+      }
+      .enteConBtns{
+        margin-top:20px;
+        a{
+          color:#fff;
+          width:100px;
+          border:1px solid #fff;
+          padding:6.5px 0;
+          display: inline-block;
+          margin:0 15px;
+        }
+      }
+    }
+  }
+}
+.base-body{
+  background: #eff3f5;
+}
+.base-nav {
+  a{
+    font-size: 14px;
+  }
+  .ant-menu.ant-menu-dark{
+    .ant-menu-item{
+      background-color: #fff;
+      a{
+        color:#333;
+        span{
+          vertical-align: middle;
+        }
+      }
+      .anticon{
+        font-size:20px;
+        vertical-align: middle;
+      }
+    }
+    .ant-menu-item:hover{
+      background-color: #f9f9f9;
+      a{
+        color:#3377c4 !important;
+      }
+    }
+    .ant-menu-item-selected{
+      background-color: #3377c4;
+      a{
+        color:#fff;
+      }
+    }
+    .ant-menu-item-selected:hover{
+      background-color: #3377c4;
+      a{
+        color:#fff !important;
+      }
+    }
+    .ant-menu-submenu-title{
+      background-color: #fff;
+      span{
+        color:#333;
+        font-size: 14px;
+        i{
+          font-size: 20px;
+          vertical-align: middle;
+        }
+        span{
+          vertical-align: middle;
+        }
+      }
+    }
+    .ant-menu-sub{
+      .ant-menu-item{
+        a{
+          color:#666;
+        }
+      }
+      .ant-menu-item-selected{
+        a{
+          color:#fff;
+        }
+      }
+    }
+
+  }
+}
+
+
